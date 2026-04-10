@@ -1,0 +1,51 @@
+---
+title: "Sleep Tracker Project Progress"
+author: "Candry, Colby, Jemaine, Ranly, and Luke"
+format: html
+---
+
+## Project Overview
+
+For this project, we are developing a Sleep Tracker program that allows a user to input how many hours they sleep each night over a one-week period. The program then uses that data to generate a graph showing sleep patterns and calculates the average amount of sleep for the week.
+
+The goal is to create something simple but useful that helps visualize sleep habits in a clear and straightforward way.
+
+## Goals
+
+Our goal is to build a program that collects sleep data for seven days, stores it, and displays it in a graph. In addition to the visual output, the program also calculates the weekly average sleep and presents it to the user. If time allows, we may expand the program to include basic feedback based on the results.
+
+## Progress So Far
+
+At this point, we have fully planned out the structure of the program and how each part will work. The program prompts the user to enter their hours of sleep for each day of the week, stores that data in a list, and then uses it to generate both a graph and an average.
+
+We have written the core code needed for input, data storage, calculations, and graphing. Everything is in place and ready to run. We have not completed full testing yet, but the program structure is set up, so testing will mainly involve checking for small errors and making sure everything runs correctly from start to finish.
+
+## Resources Used
+
+We used class notes and examples from lectures to guide the overall structure of the program. We also referenced Python documentation for help with lists and loops, along with online tutorials for using the `matplotlib` library. Online forums were used as needed to troubleshoot small issues.
+
+## Initial Code
+
+```{python}
+import matplotlib.pyplot as plt
+
+sleep_hours = []
+
+for i in range(7):
+    hours = float(input(f"Enter hours of sleep for day {i+1}: "))
+    sleep_hours.append(hours)
+
+average_sleep = sum(sleep_hours) / len(sleep_hours)
+
+print("Sleep data:", sleep_hours)
+print("Average sleep:", round(average_sleep, 2), "hours")
+
+days = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"]
+
+plt.plot(days, sleep_hours, marker='o')
+plt.title("Weekly Sleep Tracker")
+plt.xlabel("Day")
+plt.ylabel("Hours of Sleep")
+plt.grid(True)
+
+plt.show()
