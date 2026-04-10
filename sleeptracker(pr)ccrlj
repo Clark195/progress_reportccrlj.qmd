@@ -8,7 +8,7 @@ format: html
 
 For this project, we are developing a Sleep Tracker program that allows a user to input how many hours they sleep each night over a one-week period. The program then uses that data to generate a graph showing sleep patterns and calculates the average amount of sleep for the week.
 
-The goal is to create something simple but useful that helps visualize sleep habits in a clear and straightforward way.
+The purpose is to be as clear and transparent as possible. 
 
 ## Goals
 
