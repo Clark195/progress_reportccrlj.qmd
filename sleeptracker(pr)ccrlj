@@ -16,9 +16,9 @@ Our goal is to build a program that collects sleep data for seven days, stores i
 
 ## Progress So Far
 
-At this point, we have fully planned out the structure of the program and how each part will work. The program prompts the user to enter their hours of sleep for each day of the week, stores that data in a list, and then uses it to generate both a graph and an average.
+At this stage, we have finalized the overall design of the program and how each component will function. The program collects the user’s sleep hours for each day of the week, stores the data in a list, and uses that information to calculate the weekly average and generate a graph.
 
-We have written the core code needed for input, data storage, calculations, and graphing. Everything is in place and ready to run. We have not completed full testing yet, but the program structure is set up, so testing will mainly involve checking for small errors and making sure everything runs correctly from start to finish.
+We have implemented the main portions of the code, including user input, data storage, calculations, and graphing. The core functionality is complete and ready to run. While full testing has not yet been completed, the remaining work will focus on debugging and ensuring the program executes smoothly from start to finish.
 
 ## Resources Used
 
