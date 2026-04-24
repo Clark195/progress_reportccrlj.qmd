@@ -1,0 +1,133 @@
+---
+title: "Multi-Person Sleep Tracker Project"
+author: "Your Name"
+format: html
+------------
+
+## Overview
+
+For this project, I made a Python app that tracks sleep for multiple people. The idea was to have something where you can put in when someone goes to sleep and wakes up, and then actually see how much sleep they’re getting over time.
+
+I didn’t want it to just run in the terminal, so I built a full interface for it. The program also calculates average sleep and graphs everything so it’s easier to understand.
+
+---
+
+## Tools I Used
+
+I used Python for everything. Tkinter was used to build the interface, and Matplotlib was used to create the graphs. I also used GitHub to keep track of my code and changes while working on it.
+
+---
+
+## Code Access
+
+The full code for this project is here:
+
+https://github.com/Clark195/progress_reportccrlj.qmd/blob/main/sleepaverage.py
+
+Some of the main functions I worked with are:
+
+* `build_gui()`
+* `generate_nights()`
+* `parse_time()`
+* `calculate_duration_hours()`
+* `graph_data()`
+
+---
+
+## How the Program Works
+
+### Interface (Tkinter)
+
+The interface is set up in the `build_gui()` function. This is where all the buttons, labels, and input boxes are created.
+
+The screen is split into two sides. On the left, you can add and select people. On the right, you enter sleep data and see results.
+
+Buttons like “Add Person” and “Graph Sleep Data” are connected to functions like `add_person()` and `graph_data()`, so when you click them, the program actually does something.
+
+---
+
+### Storing Data
+
+All the data is stored in a dictionary called `self.people`, which is created in the `__init__` function.
+
+Each person’s name is a key, and their sleep data is saved as a list. Each entry includes the sleep time, wake time, and whether it’s AM or PM.
+
+Functions like `save_current_person_times()` and `load_person_times()` handle saving and loading the data when switching between people.
+
+---
+
+### Generating Input Rows
+
+The `generate_nights()` function creates the rows where you type in sleep times.
+
+It takes the number of nights you enter and builds that many rows using a loop. Each row has boxes for sleep time and wake time, plus dropdowns for AM/PM.
+
+All of these rows are stored in `self.night_rows` so the program can access them later.
+
+---
+
+### Time Conversion
+
+The `parse_time()` function is what makes the math work.
+
+It takes a time like "10:30 PM" and converts it into minutes. So instead of dealing with strings, everything becomes numbers.
+
+For example:
+
+* 10:30 PM → 1350 minutes
+* 7:00 AM → 420 minutes
+
+This makes it way easier to calculate sleep duration.
+
+---
+
+### Calculating Sleep Duration
+
+The `calculate_duration_hours()` function figures out how long someone slept.
+
+It subtracts the start time from the end time. If the wake time is earlier than the sleep time, it assumes the person slept overnight and adds 24 hours.
+
+After that, it converts everything into hours.
+
+---
+
+### Graphing the Data
+
+The `graph_data()` function creates the graph using Matplotlib.
+
+For each person, the program loops through their sleep data, calculates hours slept, and stores it.
+
+Then it uses `plt.scatter()` and `plt.plot()` to show the data. Each person gets their own line, and the graph shows how sleep changes over time.
+
+It also calculates the average sleep for each person and displays it in the app.
+
+---
+
+## GitHub Contributions
+
+I used GitHub to keep track of my progress while working on the project. Every time I made changes, I committed them so I could see what I added or fixed over time.
+
+This helped me stay organized and made it easier to go back if something broke.
+
+---
+
+## Challenges
+
+One problem I ran into was handling sleep times that go past midnight. At first, the math didn’t work right. I fixed it in `calculate_duration_hours()` by adding 24 hours when the wake time is earlier than the sleep time.
+
+Another issue was getting the input rows to update correctly when the number of nights changed. I handled this in `generate_nights()` by rebuilding the rows while keeping the data that was already entered.
+
+---
+
+## Conclusion
+
+This project combines a GUI, data storage, and some basic calculations into one program. It helped me understand how to build something interactive and actually useful instead of just writing small scripts.
+
+---
+
+## References
+
+Python Documentation: https://docs.python.org/3/
+Tkinter Documentation: https://docs.python.org/3/library/tkinter.html
+Matplotlib Documentation: https://matplotlib.org/stable/users/index.html
+I also used various YouTube videos to better understand how Tkinter and Matplotlib work.
