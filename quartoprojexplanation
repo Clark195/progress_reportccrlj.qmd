@@ -19,8 +19,8 @@ The goal of this project is to create an interactive application that allows mul
 - Build a graphical user interface (GUI) using Tkinter
 - Allow users to input sleep and wake times across multiple days
 - Store and manage data for multiple individuals
-- Calculate total and average sleep duration
-- Visualize sleep trends using graphs
+- Calculate total and average sleep total
+- Make sleep trends using graphs
 
 ## Tools I Used
 
@@ -131,15 +131,15 @@ Another issue was getting the input rows to update correctly when the number of 
 
 ## Progress and Initial Results
 
-So far, we have successfully developed a working version of the sleep tracking application.
+So far, we have done well developed a working version of the sleep tracking application.
 
 Current progress includes:
 
 - A fully functional GUI that allows users to:
-  - Add and remove multiple people
-  - Input sleep and wake times for multiple nights
-- Data is stored dynamically using Python dictionaries
-- Time parsing and duration calculations are working correctly, including overnight sleep
+  - Add and remove multiple people for it
+  - Put in sleep and wake times for multiple nights
+- Data is stored using Python dictionaries
+- Time and duration calculations are working correctly, including going into overnight sleep
 - A graphing feature that displays sleep trends using Matplotlib
 - The program calculates and displays average sleep duration for each person
 
@@ -158,8 +158,11 @@ This project combines a GUI, data storage, and some basic calculations into one 
 
 This project was completed as a collaborative group effort, with each member contributing to a specific part of the project.
 
-- **Candry Cariker** – Project lead and documentation. Responsible for organizing the project, writing the Quarto report, and describing the goals, progress, and overall functionality of the program.
- **Ranly Huff** – Data visualization. Responsible for developing the graphing functionality using Matplotlib, including plotting sleep data, labeling graphs, and displaying trends over time.
+- **Candry Cariker** – Project lead and documentation. Came up with the idea of for the porject, writing the Quarto report, and describing the goals, progress, and overall functionality of the program. Helped edit the quarto document as well. 
+- **Ranly Huff** – Data guy. Responsible for developing the graphing using Matplotlib, including plotting sleep data, labeling the graphs, and making the trends over time.
+- **Jamaine** – Data and calculations. Responsible for putting in time and sleep duration calculations, including handling overnight time differences and ensuring accuracy of results.
+- **Luke** – Testing and making sure everything is correct. Responsible for testing the program with different inputs, finding errors, and helping make sure the program runs right under the conditions.
+
 ---
 
 ## References
