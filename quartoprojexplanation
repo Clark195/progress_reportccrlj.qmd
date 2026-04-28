@@ -12,6 +12,16 @@ I didn’t want it to just run in the terminal, so I built a full interface for 
 
 ---
 
+## Project Goals
+
+The goal of this project is to create an interactive application that allows multiple users to track and analyze their sleep patterns over time. Specifically, we aimed to:
+
+- Build a graphical user interface (GUI) using Tkinter
+- Allow users to input sleep and wake times across multiple days
+- Store and manage data for multiple individuals
+- Calculate total and average sleep duration
+- Visualize sleep trends using graphs
+
 ## Tools I Used
 
 I used Python for everything. Tkinter was used to build the interface, and Matplotlib was used to create the graphs. I also used GitHub to keep track of my code and changes while working on it.
@@ -119,9 +129,36 @@ Another issue was getting the input rows to update correctly when the number of 
 
 ---
 
+## Progress and Initial Results
+
+So far, we have successfully developed a working version of the sleep tracking application.
+
+Current progress includes:
+
+- A fully functional GUI that allows users to:
+  - Add and remove multiple people
+  - Input sleep and wake times for multiple nights
+- Data is stored dynamically using Python dictionaries
+- Time parsing and duration calculations are working correctly, including overnight sleep
+- A graphing feature that displays sleep trends using Matplotlib
+- The program calculates and displays average sleep duration for each person
+
+We tested the program with sample data and confirmed that:
+- Sleep durations are calculated accurately
+- The graph correctly reflects trends over multiple days
+- Multiple users can be tracked independently without data overlap
+
 ## Conclusion
 
 This project combines a GUI, data storage, and some basic calculations into one program. It helped me understand how to build something interactive and actually useful instead of just writing small scripts.
+
+---
+
+## Group Contributions
+
+This project was completed as a collaborative group effort, with each member contributing to a specific part of the project.
+
+- **Candry Cariker** – Project lead and documentation. Responsible for organizing the project, writing the Quarto report, and describing the goals, progress, and overall functionality of the program.
 
 ---
 
