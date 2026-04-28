@@ -159,7 +159,7 @@ This project combines a GUI, data storage, and some basic calculations into one 
 This project was completed as a collaborative group effort, with each member contributing to a specific part of the project.
 
 - **Candry Cariker** – Project lead and documentation. Responsible for organizing the project, writing the Quarto report, and describing the goals, progress, and overall functionality of the program.
-
+ **Ranly Huff** – Data visualization. Responsible for developing the graphing functionality using Matplotlib, including plotting sleep data, labeling graphs, and displaying trends over time.
 ---
 
 ## References
