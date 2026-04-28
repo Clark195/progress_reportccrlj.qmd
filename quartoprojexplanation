@@ -159,7 +159,7 @@ This project combines a GUI, data storage, and some basic calculations into one 
 This project was completed as a collaborative group effort, with each member contributing to a specific part of the project.
 
 - Candry Cariker – Project lead and documentation. Came up with the idea of for the porject, writing the Quarto report, and describing the goals, progress, and overall functionality of the program. Helped edit the quarto document as well. 
-- Ranly Huff – Data guy. Responsible for developing the graphing using Matplotlib, including plotting sleep data, labeling the graphs, and making the trends over time.
+- Ranly Huff – Data, Responsible for developing the graphing using Matplotlib, including plotting sleep data, labeling the graphs, and making the trends over time.
 - Jamaine – Data and calculations. Responsible for putting in time and sleep duration calculations, including handling overnight time differences and ensuring accuracy of results.
 - Luke Morrow – Testing and making sure everything is correct. Responsible for testing the program with different inputs, finding errors, and helping make sure the program runs right under the conditions.
 - Colby Berry – Lead developer. I was responsible for writing the main Python code, including the GUI setup using Tkinter, making the input rows, and making sure all of the core program functions worked like they should. 
